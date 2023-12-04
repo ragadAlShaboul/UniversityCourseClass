@@ -41,5 +41,10 @@ public class UniversityCourse {
         }
 
     }
-     
+    public boolean isRegistered(String studentName){
+        return this.studentNames.contains(studentName);
+    }
+    public int getNumberOfRegisteredStudents(){
+        return this.studentNames.size();
+    }
 }
