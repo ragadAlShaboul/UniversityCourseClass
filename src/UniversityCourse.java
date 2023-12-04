@@ -30,5 +30,16 @@ public class UniversityCourse {
         this.studentNames.remove(studentName);
 
     }
+    public void drop(String[] studentNames){
+        if(studentNames == null){
+            throw new IllegalArgumentException();
+        }
+        for(int i=0;i<studentNames.length;i++){
+            if(isRegistered(studentNames[i])) {
+                this.studentNames.remove(studentNames[i]);
+            }
+        }
+
+    }
      
 }
