@@ -24,7 +24,9 @@ public class UniversityCourse {
         }
     }
     public void drop(String studentName){
-
+        if(studentName == null || !isRegistered(studentName)){
+            throw new IllegalArgumentException();
+        }
         this.studentNames.remove(studentName);
 
     }
