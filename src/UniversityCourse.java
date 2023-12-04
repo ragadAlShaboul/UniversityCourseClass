@@ -47,4 +47,13 @@ public class UniversityCourse {
     public int getNumberOfRegisteredStudents(){
         return this.studentNames.size();
     }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public String getInstructorName() {
+        return instructorName;
+    }
+
 }
