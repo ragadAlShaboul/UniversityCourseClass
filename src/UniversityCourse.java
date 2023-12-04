@@ -23,5 +23,10 @@ public class UniversityCourse {
             this.studentNames.add(studentNames[i]);
         }
     }
+    public void drop(String studentName){
+
+        this.studentNames.remove(studentName);
+
+    }
      
 }
